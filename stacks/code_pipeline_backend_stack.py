@@ -80,7 +80,7 @@ class CodePipelineBackendStack(Stack):
             cp_actions.GitHubSourceAction(
                 oauth_token=github_token,
                 output=source_output,
-                repo='app-aws-cdk',
+                repo='test',
                 branch='main',
                 owner='KarishmaDamania',
                 action_name='GitHubSource'

@@ -51,6 +51,8 @@ class S3Stack(Stack):
                 ignore_public_acls=True,
                 restrict_public_buckets=True
             ),
+            removal_policy=cdk.RemovalPolicy.DESTROY
+
         )
 
         cdk.CfnOutput(self, 's3-build-artifacts-export',
