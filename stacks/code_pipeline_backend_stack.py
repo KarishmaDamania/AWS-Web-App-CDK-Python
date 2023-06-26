@@ -62,7 +62,7 @@ class CodePipelineBackendStack(Stack):
                 },
                 'artifacts': {
                     'files': [ '**/*' ],
-                    'base-directory': './serverless'
+                    'base-directory': 'serverless/'
                 }    
             })
         )
