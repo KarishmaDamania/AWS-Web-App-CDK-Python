@@ -37,6 +37,7 @@ class CodePipelineBackendStack(Stack):
                     'STAGE': cb.BuildEnvironmentVariable(value='dev')
                 }
             ),
+            
             cache=cb.Cache.bucket(artifact_bucket, prefix='codebuild-cache'),
             build_spec=cb.BuildSpec.from_object({
                 'version': '0.2',
